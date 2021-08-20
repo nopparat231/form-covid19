@@ -27,13 +27,13 @@
                             <h6> <b> 2. ในรอบ 24 ชั่วโมงที่ผ่านมา คุณมีอาการเจ็บคอ ไอ มีน้ำมูก ตัวร้อนเป็นไข้หรือ ปวดตามร่างกายหรือไม่ ว่าติดเชื้อหรือไม่ </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" />
+                                    <input name="group1" type="radio" checked/>
                                     <span>มีอาการ</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" checked />
+                                    <input name="group1" type="radio"  />
                                     <span>ไม่มีอาการ</span>
                                 </label>
                             </p>
