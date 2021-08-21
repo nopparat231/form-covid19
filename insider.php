@@ -16,10 +16,12 @@
 
                         <div class="col s12">
                             <b>1.</b>
-                            <div class="input-field inline">
-                                <input type="number" id="autocomplete-input" class="autocomplete validate" maxlength="7">
+                            <div class="input-field inline" style="margin-bottom: 0;width: 90%;">
+                                <input type="text" id="autocomplete-input" class="autocomplete" variant="outlined" onchange="sendItem(this.value, event)">
                                 <label for="autocomplete-input">รหัสพนักงาน</label>
                             </div>
+                            <!-- <p style="margin-top: 0;">ชื่อ : <b id="emp_name"></b></p>
+                            <p>เบอร์ : <b id="emp_phone"></b> </p> -->
                         </div>
 
 
@@ -27,13 +29,13 @@
                             <h6> <b> 2. ในรอบ 24 ชั่วโมงที่ผ่านมา คุณมีอาการเจ็บคอ ไอ มีน้ำมูก ตัวร้อนเป็นไข้หรือ ปวดตามร่างกายหรือไม่ ว่าติดเชื้อหรือไม่ </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" checked/>
+                                    <input name="group1" type="radio" checked />
                                     <span>มีอาการ</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio"  />
+                                    <input name="group1" type="radio" />
                                     <span>ไม่มีอาการ</span>
                                 </label>
                             </p>
@@ -81,3 +83,9 @@
 
     </div>
 </div>
+
+
+<br>
+<br>
+<br>
+<br>

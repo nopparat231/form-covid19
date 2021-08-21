@@ -1,4 +1,5 @@
 <?php 
+error_reporting(0);
 require_once('./template/Header.php');
 
 if (isset($_GET['insider'])){
