@@ -9,11 +9,9 @@ $db = "heroku_f9aa036de2e8ee1";
 // $password = "";
 // $db = "covid19";
 
-// Check connection
-
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $db);
-
+$mysqli -> set_charset("utf8");
 // Check connection
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
