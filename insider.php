@@ -17,11 +17,9 @@
                         <div class="col s12">
                             <b>1.</b>
                             <div class="input-field inline" style="margin-bottom: 0;width: 90%;">
-                                <input type="text" id="autocomplete-input" class="autocomplete" variant="outlined" onchange="sendItem(this.value, event)">
+                                <input type="text" id="autocomplete-input" class="autocomplete" data-length="7" variant="outlined" onchange="sendItem(this.value, event)">
                                 <label for="autocomplete-input">รหัสพนักงาน</label>
                             </div>
-                            <!-- <p style="margin-top: 0;">ชื่อ : <b id="emp_name"></b></p>
-                            <p>เบอร์ : <b id="emp_phone"></b> </p> -->
                         </div>
 
 
@@ -58,11 +56,11 @@
                             </p>
                         </div>
 
+                        <div class="row">
+                        </div>
+                       
                         <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">ส่งข้อมูล</a>
+                        <a class="waves-effect waves-light  btn-large modal-trigger" href="#modal1">ส่งข้อมูล</a>
                     </form>
 
                 </div>

@@ -8,11 +8,17 @@
             </h5>
         </div>
         <div class="row center">
-            <a href="?insider" class="btn-large waves-effect waves-light orange">สำหรับพนักงาน</a>
+            <a href="?insider" class="btn-large waves-effect waves-light orange">
+                <!-- <i class="material-icons left">assignment_ind</i> -->
+                สำหรับพนักงาน
+            </a>
         </div>
         <br>
         <div class="row center">
-            <a href="?outsider" class="btn-large waves-effect waves-light teal">สำหรับบุคคลภายนอก</a>
+            <a href="?outsider" class="btn-large waves-effect waves-light teal">
+            <!-- <i class="material-icons left">contacts</i> -->
+            สำหรับบุคคลภายนอก
+        </a>
         </div>
         <br><br>
     </div>
