@@ -58,12 +58,15 @@
 
                         <div class="row">
                         </div>
-                        <input type="submit">
+
+                        <button type="submit" id="submit" class="waves-effect waves-light btn-large">ส่งข้อมูล</button>
+                        <!-- <input type="submit"> -->
                         <!-- <a type="submit" class="waves-effect waves-light btn-large modal-trigger" href="#2">ส่งข้อมูล</a> -->
                         <br>
+                        
                     </form>
                     <div id="result"></div>
-
+                   
 
                 </div>
             </div>
@@ -73,8 +76,8 @@
             <div class="modal-content">
                 <h4>กรุณาประสานงานตามรายละเอียด</h4>
                 <h5 class="nopass" style="color: red;">ผลประเมินไม่ผ่าน</h5>
-                <h5 class="nopass" >1. ให้แจ้งหัวหน้างาน และหยุดลาป่วย 2 วัน</h5>
-                <h5 class="nopass" >2. ทางบริษัทจะติดต่อประสานงานไปเป็นระยะ</h5>
+                <h5 class="nopass">1. ให้แจ้งหัวหน้างาน และหยุดลาป่วย 2 วัน</h5>
+                <h5 class="nopass">2. ทางบริษัทจะติดต่อประสานงานไปเป็นระยะ</h5>
             </div>
             <div class="modal-footer">
                 <a href="#!" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
