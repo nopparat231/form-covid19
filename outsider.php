@@ -14,58 +14,58 @@
                 <div class="row">
 
 
-                    <form action="#">
+                    <form action="store.php" id="outsider_check">
 
                         <div class="input-field col s6">
                             <i class="material-icons prefix">date_range</i>
-                            <input type="text" class="datepicker" id="datepicker_date" required>
+                            <input type="text" class="datepicker" name="datepicker_date" id="datepicker_date" required>
                             <label for="datepicker_date">วันที่</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix">access_time</i>
-                            <input type="text" class="timepicker" id="timepicker_date" required>
+                            <input type="text" class="timepicker" name="timepicker_date" id="timepicker_date" required>
                             <label for="timepicker_date">เวลา</label>
                         </div>
 
 
                         <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate" required value="">
+                            <input id="first_name" name="first_name" type="text" class="validate" required value="">
                             <label for="first_name">ชื่อ</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate" required value="">
+                            <input id="last_name" name="last_name" type="text" class="validate" required value="">
                             <label for="last_name">นามสกุล</label>
                         </div>
 
                         <div class="input-field col s6">
-                            <input id="national_id" type="number" class="validate" data-length="13">
+                            <input id="national_id" name="national_id" type="number" class="validate" data-length="13">
                             <label for="national_id">หมายเลขบัตรประชาชน</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="phone" type="number" class="validate" data-length="10">
+                            <input id="phone" name="phone" type="number" class="validate" data-length="10">
                             <label for="phone">เบอร์โทรติดต่อ</label>
                         </div>
 
                         <div class="input-field col s6">
-                            <input id="agency" type="text" class="validate">
+                            <input id="agency" name="agency" type="text" class="validate">
                             <label for="agency">ชื่อหน่วยงานที่มา</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="location_out" type="text" class="validate">
+                            <input id="location_out" name="location_out" type="text" class="validate">
                             <label for="location_out">สถานที่หน่วยงาน</label>
                         </div>
 
                         <div class="input-field col s6">
-                            <input id="contact" type="text" class="validate">
+                            <input id="contact" name="contact" type="text" class="validate">
                             <label for="contact">ติดต่อหน่วยงาน/ผู้ใด</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="location_in" type="text" class="validate">
+                            <input id="location_in" name="location_in" type="text" class="validate">
                             <label for="location_in">พื้นที่เข้ามาติดต่อ/ปฏิบัติงาน</label>
                         </div>
 
                         <div class="input-field col s12">
-                            <textarea id="contact_matter" class="materialize-textarea"></textarea>
+                            <textarea id="contact_matter" name="contact_matter" class="materialize-textarea"></textarea>
                             <label for="contact_matter">เรื่องที่มาติดต่อ</label>
                         </div>
 

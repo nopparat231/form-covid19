@@ -80,7 +80,7 @@
                 <h5 class="nopass">2. ทางบริษัทจะติดต่อประสานงานไปเป็นระยะ</h5>
             </div>
             <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
+                <a href="index.php" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
             </div>
         </div>
 
@@ -91,7 +91,7 @@
                 <h5 class="pass" style="color: green;">ผ่าน</h5>
             </div>
             <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
+                <a href="index.php" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
             </div>
         </div>
 

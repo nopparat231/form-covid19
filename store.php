@@ -28,24 +28,41 @@ if ($requestMethod == 'POST') {
 
     if (!empty($result)) {
 
-        $emp_check_emp_id = $result['emp_check_emp_id'];
-        $emp_check_2 = $result['emp_check_2'];
-        $emp_check_3 = $result['emp_check_3'];
-        $emp_check_status = $result['emp_check_status'];
-        $emp_check_time = $result['emp_check_time'];
+        if ($result['check_part'] == 1) {
+            $emp_check_emp_id = $result['emp_check_emp_id'];
+            $emp_check_2 = $result['emp_check_2'];
+            $emp_check_3 = $result['emp_check_3'];
+            $emp_check_status = $result['emp_check_status'];
+            $emp_check_time = $result['emp_check_time'];
 
-        //คำสั่ง SQL สำหรับเพิ่มข้อมูลใน Database
-        $sql = "INSERT INTO emp_check_form (emp_check_id,emp_check_emp_id,emp_check_2,emp_check_3,emp_check_status,emp_check_time) VALUES (NULL,'$emp_check_emp_id','$emp_check_2','$emp_check_3','$emp_check_status','$emp_check_time')";
+            //คำสั่ง SQL สำหรับเพิ่มข้อมูลใน Database
+            $sql = "INSERT INTO emp_check_form (emp_check_id,emp_check_emp_id,emp_check_2,emp_check_3,emp_check_status,emp_check_time) VALUES (NULL,'$emp_check_emp_id','$emp_check_2','$emp_check_3','$emp_check_status','$emp_check_time')";
 
-        $result = mysqli_query($conn, $sql);
+            $result = mysqli_query($conn, $sql);
 
-        if ($result) {
-            echo json_encode(['status' => 'ok', 'message' => 'Insert Data Complete']);
-        } else {
-            echo json_encode(['status' => 'error', 'message' => 'Error']);
+            if ($result) {
+                echo json_encode(['status' => 'ok', 'message' => 'Insert Data Complete']);
+            } else {
+                echo json_encode(['status' => 'error', 'message' => 'Error']);
+            }
+        }elseif($result['check_part'] == 2){
+            
+            $emp_check_emp_id = $result['emp_check_emp_id'];
+            $emp_check_2 = $result['emp_check_2'];
+            $emp_check_3 = $result['emp_check_3'];
+            $emp_check_status = $result['emp_check_status'];
+            $emp_check_time = $result['emp_check_time'];
+
+            //คำสั่ง SQL สำหรับเพิ่มข้อมูลใน Database
+            $sql = "INSERT INTO emp_check_form (emp_check_id,emp_check_emp_id,emp_check_2,emp_check_3,emp_check_status,emp_check_time) VALUES (NULL,'$emp_check_emp_id','$emp_check_2','$emp_check_3','$emp_check_status','$emp_check_time')";
+
+            $result = mysqli_query($conn, $sql);
+
+            if ($result) {
+                echo json_encode(['status' => 'ok', 'message' => 'Insert Data Complete']);
+            } else {
+                echo json_encode(['status' => 'error', 'message' => 'Error']);
+            }
         }
     }
 }
-
-
-?>
