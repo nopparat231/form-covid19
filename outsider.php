@@ -74,13 +74,13 @@
                             <h6> <b class="flow-text"> 1. ท่านมีอาการไข้ มีน้ำมูก ไอ เจ็บคอ หรือหายใจเหนื่อยหอบ และมีบุคคลที่พักอาศัยในบ้าน หรือ หอพัก ร่วมกับผู้ติดเชื้อ หรือมีอาการป่วยที่สงสัยว่าติดเชื้อหรือไม่ </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" checked />
+                                    <input name="group1" type="radio" value="1" checked />
                                     <span>มีอาการ</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" />
+                                    <input name="group1" type="radio" value="0"  />
                                     <span>ไม่มีอาการ</span>
                                 </label>
                             </p>
@@ -90,13 +90,13 @@
                             <h6> <b class="flow-text"> 2. ท่านเป็นบุคคลที่อยู่ในระหว่างการกักตัวเนื่องจากเป็นกลุ่มเสี่ยงเชื้อโควิด 19 หรือไม่ </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group2" type="radio" checked />
+                                    <input name="group2" type="radio" value="1" checked />
                                     <span>ใช่</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group2" type="radio" />
+                                    <input name="group2" type="radio" value="0" />
                                     <span>ไม่ใช่</span>
                                 </label>
                             </p>
@@ -106,13 +106,13 @@
                             <h6> <b class="flow-text"> 3. ท่านได้รับการฉีดวัคซีนแล้วหรือไม่ </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group3" type="radio" checked />
+                                    <input name="group3" type="radio" value="1" checked />
                                     <span>ใช่</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group3" type="radio" />
+                                    <input name="group3" type="radio" value="0" />
                                     <span>ไม่ใช่</span>
                                 </label>
                             </p>
@@ -122,13 +122,13 @@
                             <h6> <b class="flow-text"> 4. ผลตรวจ ATK / Rapid test ของท่าน พร้อม แนบรูปผลการตรวจ ATK ( ) ในรอบ 7 วันที่ผ่านมา </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group4" type="radio" />
+                                    <input name="group4" type="radio" value="1" />
                                     <span>Nagative</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group4" type="radio" checked />
+                                    <input name="group4" type="radio" value="0"  checked />
                                     <span>Positive</span>
                                 </label>
                             </p>
@@ -139,7 +139,7 @@
                             <div class="file-field input-field">
                                 <div class="btn">
                                     <span>Browse</span>
-                                    <input type="file" multiple />
+                                    <input type="file" onclick="uploadFile()" multiple />
                                 </div>
 
                                 <div class="file-path-wrapper">
@@ -166,7 +166,7 @@
                             </p>
                         </div>
 
-                        <a class="waves-effect waves-light btn-large modal-trigger" onclick="myFunction()" href="#modal1">ส่งข้อมูล</a>
+                        <button type="submit" id="submit" class="waves-effect waves-light btn-large">ส่งข้อมูล</button>
 
                     </form>
                     <br>
@@ -189,7 +189,23 @@
                 <h5 style="color: green;">ผลประเมินผ่าน</h5>
             </div>
             <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
+                <a href="index.php" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content center-align">
+                <h4>แจ้งผลการประเมิน</h4>
+                <h5>
+                    <p id="name_report"></p>
+                </h5>
+                <h5>ทำแบบประเมิน
+                    <p id="date_report"></p>
+                </h5>
+                <h5 style="color: red;">ผลประเมินไม่ผ่าน</h5>
+            </div>
+            <div class="modal-footer">
+                <a href="index.php" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
             </div>
         </div>
 
@@ -207,8 +223,6 @@
         document.getElementById("name_report").innerHTML = first_name + "  " + last_name;
 
         document.getElementById("date_report").innerHTML = "วันที่ " + datepicker_date + "  เวลา " + timepicker_date;
-
-
     }
 </script>
 
