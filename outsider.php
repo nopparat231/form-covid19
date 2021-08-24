@@ -139,11 +139,11 @@
                             <div class="file-field input-field">
                                 <div class="btn">
                                     <span>Browse</span>
-                                    <input type="file" onclick="uploadFile()" multiple />
+                                    <input type="file" name="fileupload" id="fileupload"  multiple />
                                 </div>
 
                                 <div class="file-path-wrapper">
-                                    <input class="file-path validate" type="text" placeholder="Upload multiple files" />
+                                    <input class="file-path validate" name="fileupload_name" type="text" placeholder="Upload multiple files" />
                                 </div>
                             </div>
                         </div>
