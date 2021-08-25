@@ -18,7 +18,7 @@
 
                         <div class="input-field col s6">
                             <i class="material-icons prefix">date_range</i>
-                            <input type="text" class="datepicker" name="datepicker_date" id="datepicker_date"  required>
+                            <input type="text" class="datepicker" name="datepicker_date" id="datepicker_date" required>
                             <label for="datepicker_date">วันที่</label>
                         </div>
                         <div class="input-field col s6">
@@ -109,14 +109,6 @@
                                     <input name="group3" type="radio" value="1" checked />
                                     <span>ใช่</span>
                                 </label>
-                            //ถ้าได้รับแล้ว ให้ใส่วันที่ได้รับวัคซีนด้วย    
-                            <input type="text" class="datepicker" name="datepicker_date" id="datepicker_date" required>
-                            <label for="datepicker_date">เข็มที่ 1 วันที่</label>
-                            <input type="text" class="datepicker" name="datepicker_date" id="datepicker_date" required>
-                            <label for="datepicker_date">เข็มที่ 2 วันที่</label>
-                        </div>
-                        </div>
-
                             </p>
                             <p>
                                 <label>
@@ -221,7 +213,6 @@
 </div>
 
 <script>
-   
     function myFunction() {
         var first_name = document.getElementById("first_name").value;
         var last_name = document.getElementById("last_name").value;
