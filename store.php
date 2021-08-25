@@ -47,14 +47,33 @@ if ($requestMethod == 'POST') {
             }
         } elseif ($result['check_part'] == 2) {
 
-            $emp_check_emp_id = $result['emp_check_emp_id'];
-            $emp_check_2 = $result['emp_check_2'];
-            $emp_check_3 = $result['emp_check_3'];
-            $emp_check_status = $result['emp_check_status'];
-            $emp_check_time = $result['emp_check_time'];
+            $outsider_check_datepicker_date = $result['outsider_check_datepicker_date'];
+            $outsider_check_timepicker_date = $result['outsider_check_timepicker_date'];
+            $outsider_check_first_name = $result['outsider_check_first_name'];
+            $outsider_check_last_name = $result['outsider_check_last_name'];
+            $outsider_check_national_id = $result['outsider_check_national_id'];
+            $outsider_check_national_phone = $result['outsider_check_national_phone'];
+            $outsider_check_agency = $result['outsider_check_agency'];
+            $outsider_check_location_out = $result['outsider_check_location_out'];
+            $outsider_check_contact = $result['outsider_check_contact'];
+            $outsider_check_location_in = $result['outsider_check_location_in'];
+            $outsider_check_contact_matter = $result['outsider_check_contact_matter'];
+            $outsider_check_group1 = $result['outsider_check_group1'];
+            $outsider_check_group2 = $result['outsider_check_group2'];
+            $outsider_check_group3 = $result['outsider_check_group3'];
+            $outsider_check_group4 = $result['outsider_check_group4'];
+            $outsider_check_file = $result['outsider_check_file'];
+            $outsider_check_status = $result['outsider_check_status'];
+            $outsider_check_time = $result['outsider_check_time'];
+
 
             //คำสั่ง SQL สำหรับเพิ่มข้อมูลใน Database
-            $sql = "INSERT INTO emp_check_form (emp_check_id,emp_check_emp_id,emp_check_2,emp_check_3,emp_check_status,emp_check_time) VALUES (NULL,'$emp_check_emp_id','$emp_check_2','$emp_check_3','$emp_check_status','$emp_check_time')";
+            $sql = "INSERT INTO outsider_check_form (outsider_check_id ,outsider_check_datepicker_date,outsider_check_timepicker_date,outsider_check_first_name,outsider_check_last_name,
+            outsider_check_national_id,outsider_check_national_phone,outsider_check_agency,outsider_check_location_out,outsider_check_contact,outsider_check_location_in,outsider_check_contact_matter,
+            outsider_check_group1,outsider_check_group2,outsider_check_group3,outsider_check_group4,outsider_check_file,outsider_check_status,outsider_check_time)
+             VALUES (NULL,'$outsider_check_datepicker_date','$outsider_check_timepicker_date','$outsider_check_first_name','$outsider_check_last_name',
+           '$outsider_check_national_id','$outsider_check_national_phone','$outsider_check_agency','$outsider_check_location_out','$outsider_check_contact','$outsider_check_location_in','$outsider_check_contact_matter',
+           '$outsider_check_group1','$outsider_check_group2','$outsider_check_group3','$outsider_check_group4','$outsider_check_file','$outsider_check_status','$outsider_check_time')";
 
             $result = mysqli_query($conn, $sql);
 
@@ -66,16 +85,19 @@ if ($requestMethod == 'POST') {
         }
     }
 
-    /* Get the name of the uploaded file */
-    $filename = $_FILES['file']['name'];
+    //อัพไฟล์
+    if (isset($_FILES['sample_image'])) {
 
-    /* Choose where to save the uploaded file */
-    $location = "upload/" . $filename;
+        $extension = pathinfo($_FILES['sample_image']['name'], PATHINFO_EXTENSION);
 
-    /* Save the uploaded file to the local filesystem */
-    if (move_uploaded_file($_FILES['file']['tmp_name'], $location)) {
-        return $filename;
-    } else {
-        echo 'Failure';
+        $new_name = time() . '.' . $extension;
+
+        move_uploaded_file($_FILES['sample_image']['tmp_name'], 'upload/' . $new_name);
+
+        $data = array(
+            'image_name' => $new_name
+        );
+
+        echo json_encode($new_name);
     }
 }

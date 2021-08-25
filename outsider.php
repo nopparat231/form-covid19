@@ -23,7 +23,7 @@
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix">access_time</i>
-                            <input type="text" class="timepicker" name="timepicker_date" id="timepicker_date" required>
+                            <input type="text" class="timepicker" placeholder="Placeholder" name="timepicker_date" id="timepicker_date" required>
                             <label for="timepicker_date">เวลา</label>
                         </div>
 
@@ -139,13 +139,14 @@
                             <div class="file-field input-field">
                                 <div class="btn">
                                     <span>Browse</span>
-                                    <input type="file" name="fileupload" id="fileupload"  multiple />
+                                    <input type="file" name="sample_image" id="sample_image" />
                                 </div>
 
                                 <div class="file-path-wrapper">
                                     <input class="file-path validate" name="fileupload_name" type="text" placeholder="Upload multiple files" />
                                 </div>
                             </div>
+                            <input class="text-center" id="uploaded_image" name="uploaded_image" hidden>
                         </div>
 
                         <div class="row">
@@ -177,7 +178,7 @@
             </div>
         </div>
         <!-- Modal Structure -->
-        <div id="modal1" class="modal">
+        <div id="modal11" class="modal">
             <div class="modal-content center-align">
                 <h4>แจ้งผลการประเมิน</h4>
                 <h5>
@@ -193,7 +194,7 @@
             </div>
         </div>
 
-        <div id="modal2" class="modal">
+        <div id="modal22" class="modal">
             <div class="modal-content center-align">
                 <h4>แจ้งผลการประเมิน</h4>
                 <h5>
