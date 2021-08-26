@@ -38,34 +38,34 @@
                         </div>
 
                         <div class="input-field col s6">
-                            <input id="national_id" name="national_id" type="number" class="validate" data-length="13">
+                            <input id="national_id" name="national_id" type="number" class="validate" required data-length="13">
                             <label for="national_id">หมายเลขบัตรประชาชน</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="phone" name="phone" type="number" class="validate" data-length="10">
+                            <input id="phone" name="phone" type="number" class="validate" required data-length="10">
                             <label for="phone">เบอร์โทรติดต่อ</label>
                         </div>
 
                         <div class="input-field col s6">
-                            <input id="agency" name="agency" type="text" class="validate">
+                            <input id="agency" name="agency" type="text" class="validate" required>
                             <label for="agency">ชื่อหน่วยงานที่มา</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="location_out" name="location_out" type="text" class="validate">
+                            <input id="location_out" name="location_out" type="text" class="validate" required>
                             <label for="location_out">สถานที่หน่วยงาน</label>
                         </div>
 
                         <div class="input-field col s6">
-                            <input id="contact" name="contact" type="text" class="validate">
+                            <input id="contact" name="contact" type="text" class="validate" required>
                             <label for="contact">ติดต่อหน่วยงาน/ผู้ใด</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="location_in" name="location_in" type="text" class="validate">
+                            <input id="location_in" name="location_in" type="text" class="validate" required>
                             <label for="location_in">พื้นที่เข้ามาติดต่อ/ปฏิบัติงาน</label>
                         </div>
 
                         <div class="input-field col s12">
-                            <textarea id="contact_matter" name="contact_matter" class="materialize-textarea"></textarea>
+                            <textarea id="contact_matter" name="contact_matter" class="materialize-textarea" required></textarea>
                             <label for="contact_matter">เรื่องที่มาติดต่อ</label>
                         </div>
 
@@ -80,7 +80,7 @@
                             </p>
                             <p>
                                 <label>
-                                    <input name="group1" type="radio" value="0"  />
+                                    <input name="group1" type="radio" value="0" />
                                     <span>ไม่มีอาการ</span>
                                 </label>
                             </p>
@@ -106,13 +106,22 @@
                             <h6> <b class="flow-text"> 3. ท่านได้รับการฉีดวัคซีนแล้วหรือไม่ </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group3" type="radio" value="1" checked />
+                                    <input name="group3" type="radio" value="0" id="group3id1" />
                                     <span>ใช่</span>
+                                    <div class="input-field col s12" id="select_v" style="display: none;">
+                                        <select id="select_vcc" name="select_vcc">
+                                            <option value="" disabled selected>เลือกจำนวณ</option>
+                                            <option value="เข็มที่ 1">เข็มที่ 1</option>
+                                            <option value="เข็มที่ 2">เข็มที่ 2</option>
+                                            <option value="เข็มที่ 3">เข็มที่ 3</option>
+                                        </select>
+                                        <label>เลือกเข็มที่ฉีด</label>
+                                    </div>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group3" type="radio" value="0" />
+                                    <input name="group3" type="radio" value="1" id="group3id2" checked />
                                     <span>ไม่ใช่</span>
                                 </label>
                             </p>
@@ -128,7 +137,7 @@
                             </p>
                             <p>
                                 <label>
-                                    <input name="group4" type="radio" value="0"  checked />
+                                    <input name="group4" type="radio" value="0" checked />
                                     <span>Positive</span>
                                 </label>
                             </p>

@@ -61,6 +61,7 @@ if ($requestMethod == 'POST') {
             $outsider_check_group1 = $result['outsider_check_group1'];
             $outsider_check_group2 = $result['outsider_check_group2'];
             $outsider_check_group3 = $result['outsider_check_group3'];
+            $outsider_check_vcc = $result['outsider_check_vcc'];
             $outsider_check_group4 = $result['outsider_check_group4'];
             $outsider_check_file = $result['outsider_check_file'];
             $outsider_check_status = $result['outsider_check_status'];
@@ -70,10 +71,10 @@ if ($requestMethod == 'POST') {
             //คำสั่ง SQL สำหรับเพิ่มข้อมูลใน Database
             $sql = "INSERT INTO outsider_check_form (outsider_check_id ,outsider_check_datepicker_date,outsider_check_timepicker_date,outsider_check_first_name,outsider_check_last_name,
             outsider_check_national_id,outsider_check_national_phone,outsider_check_agency,outsider_check_location_out,outsider_check_contact,outsider_check_location_in,outsider_check_contact_matter,
-            outsider_check_group1,outsider_check_group2,outsider_check_group3,outsider_check_group4,outsider_check_file,outsider_check_status,outsider_check_time)
+            outsider_check_group1,outsider_check_group2,outsider_check_group3,outsider_check_vcc,outsider_check_group4,outsider_check_file,outsider_check_status,outsider_check_time)
              VALUES (NULL,'$outsider_check_datepicker_date','$outsider_check_timepicker_date','$outsider_check_first_name','$outsider_check_last_name',
            '$outsider_check_national_id','$outsider_check_national_phone','$outsider_check_agency','$outsider_check_location_out','$outsider_check_contact','$outsider_check_location_in','$outsider_check_contact_matter',
-           '$outsider_check_group1','$outsider_check_group2','$outsider_check_group3','$outsider_check_group4','$outsider_check_file','$outsider_check_status','$outsider_check_time')";
+           '$outsider_check_group1','$outsider_check_group2','$outsider_check_group3','$outsider_check_vcc','$outsider_check_group4','$outsider_check_file','$outsider_check_status','$outsider_check_time')";
 
             $result = mysqli_query($conn, $sql);
 

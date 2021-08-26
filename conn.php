@@ -5,10 +5,10 @@
  $password = "67ec157f";
  $db = "heroku_f9aa036de2e8ee1";
 
-//$servername = "localhost";
-//$username = "root";
-//$password = "";
-//$db = "covid19";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $db = "covid19";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $db);
