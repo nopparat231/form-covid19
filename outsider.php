@@ -109,13 +109,8 @@
                                     <input name="group3" type="radio" value="0" id="group3id1" />
                                     <span>ใช่</span>
                                     <div class="input-field col s12" id="select_v" style="display: none;">
-                                        <select id="select_vcc" name="select_vcc">
-                                            <option value="" disabled selected>เลือกจำนวณ</option>
-                                            <option value="เข็มที่ 1">เข็มที่ 1</option>
-                                            <option value="เข็มที่ 2">เข็มที่ 2</option>
-                                            <option value="เข็มที่ 3">เข็มที่ 3</option>
-                                        </select>
-                                        <label>เลือกเข็มที่ฉีด</label>
+                                        <input id="select_vcc" name="select_vcc" type="text" class="validate">
+                                        <label for="select_vcc">กรุณากรอกวันที่ฉีดวัคซีน</label>
                                     </div>
                                 </label>
                             </p>
