@@ -97,7 +97,6 @@
 
     </div>
 </div>
-// THis is comment
  <!--   Icon Section   -->
 
 <br>
