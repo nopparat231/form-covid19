@@ -107,8 +107,6 @@
 
     </div>
 </div>
-<!--   Icon Section   -->
-
 <br>
 <br>
 <br>
