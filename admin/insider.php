@@ -1,11 +1,6 @@
 <h5 class="header center orange-text"><b>ตรวจสอบข้อมูลพนักงาน</b></h5>
-<style>
-    td,
-    th {
-        text-align: center;
-    }
-</style>
-<table class="striped" id="example">
+
+<table class="striped responsive-table centered nowrap" id="example">
     <thead>
         <tr>
             <th>กะ</th>

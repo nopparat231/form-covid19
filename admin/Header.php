@@ -32,7 +32,10 @@
 
     <link type="text/css" rel="stylesheet" href="../lib/css/style.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="../lib/DataTables/DataTables-1.11.0/css/jquery.dataTables.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../lib/DataTables/DataTables-1.11.0/css/fixedColumns.dataTables.min.css" media="screen,projection" />
 
+    <link type="text/css" rel="stylesheet" href="../lib/DataTables/DataTables-1.11.0/css/buttons.dataTables.min.css" media="screen,projection" />
+  
 </head>
 
 <body>
