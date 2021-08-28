@@ -81,9 +81,13 @@
         <div id="modal1" class="modal">
             <div class="modal-content" style="text-align: center;">
                 <h4>กรุณาประสานงานตามรายละเอียด</h4>
+                <span class="material-icons prefix" style="color: red; font-size: 5rem;">
+                    warning_amber
+                </span>
+                <h5 class="nopass" style="color: red;">ผลประเมินไม่ผ่าน</h5>
                 <h5><b id="date_show1"></b></h5>
                 <h5><b id="name_show1"></b></h5>
-                <h5 class="nopass" style="color: red;">ผลประเมินไม่ผ่าน</h5>
+
                 <h5 class="nopass">1. ให้แจ้งหัวหน้างาน และหยุดลาป่วย 2 วัน</h5>
                 <h5 class="nopass">2. ทางบริษัทจะติดต่อประสานงานไปเป็นระยะ</h5>
             </div>
@@ -96,9 +100,13 @@
         <div id="modal2" class="modal">
             <div class="modal-content" style="text-align: center;">
                 <h4>ผลการประเมิน</h4>
+                <span class="material-icons prefix" style="color: green; font-size: 5rem;">
+                    check_circle_outline
+                </span>
+                <h4 class="pass" style="color: green;">ผ่าน</h4>
                 <h5><b id="date_show2"></b></h5>
                 <h5><b id="name_show2"></b></h5>
-                <h4 class="pass" style="color: green;">ผ่าน</h4>
+
             </div>
             <div class="modal-footer">
                 <a href="index.php" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>

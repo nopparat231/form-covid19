@@ -185,13 +185,18 @@
         <div id="modal11" class="modal">
             <div class="modal-content center-align">
                 <h4>แจ้งผลการประเมิน</h4>
-                <h5>
-                    <p id="name_report"></p>
-                </h5>
-                <h5>ทำแบบประเมิน
-                    <p id="date_report"></p>
-                </h5>
+                <span class="material-icons prefix" style="color: green; font-size: 5rem;">
+                    check_circle_outline
+                </span>
                 <h5 style="color: green;">ผลประเมินผ่าน</h5>
+
+                <h5>
+                    <p id="name_report1"></p>
+                </h5>
+                <h5>
+                    <p id="date_report1"></p>
+                </h5>
+               
             </div>
             <div class="modal-footer">
                 <a href="index.php" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
@@ -201,13 +206,18 @@
         <div id="modal22" class="modal">
             <div class="modal-content center-align">
                 <h4>แจ้งผลการประเมิน</h4>
-                <h5>
-                    <p id="name_report"></p>
-                </h5>
-                <h5>ทำแบบประเมิน
-                    <p id="date_report"></p>
-                </h5>
+                <span class="material-icons prefix" style="color: red; font-size: 5rem;">
+                    warning_amber
+                </span>
                 <h5 style="color: red;">ผลประเมินไม่ผ่าน</h5>
+
+                <h5>
+                    <p id="name_report2"></p>
+                </h5>
+                <h5>
+                    <p id="date_report2"></p>
+                </h5>
+               
             </div>
             <div class="modal-footer">
                 <a href="index.php" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
