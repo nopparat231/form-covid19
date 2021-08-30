@@ -126,13 +126,13 @@
                             <h6> <b class="flow-text"> 4. ผลตรวจ ATK / Rapid test ของท่าน พร้อม แนบรูปผลการตรวจ ATK ( ) ในรอบ 7 วันที่ผ่านมา </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group4" type="radio" value="1" />
+                                    <input name="group4" type="radio" value="0" />
                                     <span>Nagative</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group4" type="radio" value="0" checked />
+                                    <input name="group4" type="radio" value="1" checked />
                                     <span>Positive</span>
                                 </label>
                             </p>
