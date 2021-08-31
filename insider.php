@@ -27,6 +27,7 @@
                                 <input type="text" id="autocomplete-input" class="autocomplete" required name="emp_data" data-length="7" variant="outlined" onchange="sendItem(this.value, event)">
                                 <label for="autocomplete-input">รหัสพนักงาน</label>
                             </div>
+                            <!--      -->
                             <h6> <b> รอบ 1-2 วันที่ผ่านมาคุณไปรับการฉีดวัคซีนหรือไม่ </b> </h6>
                             <p>
                                 <label>
@@ -41,6 +42,7 @@
                                 </label>
                             </p>
                              
+
                         </div>
 
                         <div class="col s12">
