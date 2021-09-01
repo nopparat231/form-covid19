@@ -7,8 +7,10 @@
             <th>รหัสพนักงาน</th>
             <th>ชื่อ - สกุล</th>
             <th>แผนก</th>
+            <th>การฉีดวัคซีน</th>
             <th>ข้อ 2</th>
             <th>ข้อ 3</th>
+            
             <th>ผลการตรวจ</th>
             <th>วันที่</th>
         </tr>
@@ -30,8 +32,10 @@
                     <td><?= $row["emp_check_emp_id"] ?></td>
                     <td><?= $row["Name_Surname"] ?></td>
                     <td><?= $row["Department"] ?></td>
+                    <td><?= $row["emp_check_4"] ?></td>
                     <td><?= $row["emp_check_2"] ?></td>
                     <td><?= $row["emp_check_3"] ?></td>
+                    
                     <td><?php
                         if ($row["emp_check_status"] == 1) {
                             echo "<p style='color:red'>ไม่ผ่าน</p>";
