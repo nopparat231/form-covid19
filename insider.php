@@ -15,7 +15,7 @@
                     <form action="store.php" id="emp_check">
 
                         <div class="col s12">
-                            <b>1.</b>
+                            <b></b>
                             <div class="input-field inline" style="margin-bottom: 0;width: 30%;">
                                 <select name="emp_shift" id="emp_shift" required>
                                     <option value="" disabled selected>เลือกกะ</option>
@@ -28,7 +28,7 @@
                                 <label for="autocomplete-input">รหัสพนักงาน</label>
                             </div>
                             <!--      -->
-                            <h6> <b> รอบ 1-2 วันที่ผ่านมาคุณไปรับการฉีดวัคซีนหรือไม่ </b> </h6>
+                            <h6> <b> 1. รอบ 1-2 วันที่ผ่านมาคุณไปรับการฉีดวัคซีนหรือไม่ </b> </h6>
                             <p>
                                 <label>
                                     <input name="group101" type="radio" value="1" checked />
@@ -67,13 +67,13 @@
                             <p>
                                 <label>
                                     <input name="group2" type="radio" value="1" />
-                                    <span>มีอาการ</span>
+                                    <span>ใช่</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input name="group2" type="radio" value="0" checked />
-                                    <span>ไม่มีอาการ</span>
+                                    <span>ไม่ใช่</span>
                                 </label>
                             </p>
                         </div>
