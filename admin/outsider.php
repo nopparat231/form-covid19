@@ -39,7 +39,6 @@
     <tbody>
         <?php
         require_once('../conn.php');
-
         $sql = "SELECT * FROM `outsider_check_form`";
         $result = $conn->query($sql);
 
