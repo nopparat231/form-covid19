@@ -32,17 +32,14 @@
                     <td><?= $row["emp_check_emp_id"] ?></td>
                     <td><?= $row["Name_Surname"] ?></td>
                     <td><?= $row["Department"] ?></td>
-                    <td><?=  ?>
+                    <td>
                     <?php
                         if ($row["emp_check_4"] == 1) {
                             echo "<p style='color:red'>ฉีดแล้ว</p>";
                         } else {
                             echo "<p style='color:green'>ยังไม่ฉีด</p>";
                         }
-                        ?>
-                
-                
-                </td>
+                        ?></td>
                     <td><?= $row["emp_check_2"] ?></td>
                     <td><?= $row["emp_check_3"] ?></td>
                     
