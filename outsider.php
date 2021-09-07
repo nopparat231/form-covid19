@@ -127,13 +127,13 @@
                             <p>
                                 <label>
                                     <input name="group4" type="radio" value="0" />
-                                    <span>Nagative</span>
+                                    <span>Nagative(ผลลบ ไม่พบเชื้อ)</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input name="group4" type="radio" value="1" checked />
-                                    <span>Positive</span>
+                                    <span>Positive(ผลบวก พบเชื้อ)</span>
                                 </label>
                             </p>
                         </div>
