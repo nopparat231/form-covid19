@@ -43,12 +43,21 @@
                     <td>
                         <?php
                         if ($row["emp_check_2"]== 1) {
+                            echo "<p style='color:red'>มีอาการ</p>";
+                        } else {
+                            echo "<p style='color:green'>ไม่มีอาการ</p>";
+                        }
+                        ?></td>
+                    <td><?= $row["emp_check_3"] ?>
+                    <?php
+                        if ($row["emp_check_3"]== 1) {
                             echo "<p style='color:red'>ใช่</p>";
                         } else {
                             echo "<p style='color:green'>ไม่ใช่</p>";
                         }
-                        ?></td>
-                    <td><?= $row["emp_check_3"] ?></td>
+                        ?>
+                
+                </td>
                     
                     <td><?php
                         if ($row["emp_check_status"] == 1) {
