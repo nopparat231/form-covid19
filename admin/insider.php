@@ -55,8 +55,7 @@
                         } else {
                             echo "<p style='color:green'>ไม่ใช่</p>";
                         }
-                        ?>
-                
+                        ?>                
                 </td>
                     
                     <td><?php
