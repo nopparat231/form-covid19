@@ -48,7 +48,7 @@
                             echo "<p style='color:green'>ไม่มีอาการ</p>";
                         }
                         ?></td>
-                    <td><?= $row["emp_check_3"] ?>
+                    <td>
                     <?php
                         if ($row["emp_check_3"]== 1) {
                             echo "<p style='color:red'>ใช่</p>";
