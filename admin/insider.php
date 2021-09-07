@@ -35,12 +35,18 @@
                     <td>
                     <?php
                         if ($row["emp_check_4"] == 1) {
-                            echo "<p style='color:red'>ฉีดแล้ว</p>";
+                            echo "<p style='color:red'>ใช่</p>";
                         } else {
-                            echo "<p style='color:green'>ยังไม่ฉีด</p>";
+                            echo "<p style='color:green'>ไม่ใช่</p>";
                         }
                         ?></td>
-                    <td><?= $row["emp_check_2"] ?></td>
+                    <td>
+                    if ($row["emp_check_2"]== 1) {
+                            echo "<p style='color:red'>ใช่</p>";
+                        } else {
+                            echo "<p style='color:green'>ไม่ใช่</p>";
+                        }
+                        ?></td>
                     <td><?= $row["emp_check_3"] ?></td>
                     
                     <td><?php
