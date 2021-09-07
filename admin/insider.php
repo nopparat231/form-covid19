@@ -40,7 +40,7 @@
                             echo "<p style='color:green'>ไม่ใช่</p>";
                         }
                         ?></td>
-                    <td>
+                    <td><?php
                     if ($row["emp_check_2"]== 1) {
                             echo "<p style='color:red'>ใช่</p>";
                         } else {
