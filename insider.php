@@ -23,7 +23,7 @@
                                     <option value="กะดึก">กะดึก</option>
                                 </select>
                             </div></b> </h6>
-                            <div class="input-field inline" style="margin-bottom: 0;width: 60%;">
+                            <div class="input-field inline" style="margin-bottom: 0;width: 95%;">
                                 <input type="text" id="autocomplete-input" class="autocomplete" required name="emp_data" data-length="7" variant="outlined" onchange="sendItem(this.value, event)">
                                 <label for="autocomplete-input">รหัสพนักงาน</label>
                             </div>
