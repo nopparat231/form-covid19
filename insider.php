@@ -15,14 +15,14 @@
                     <form action="store.php" id="emp_check">
 
                         <div class="col s12">
-                        <h6> <b>
+                        
                             <div class="input-field inline" style="margin-bottom: 0;width: 30%;">
                                 <select name="emp_shift" id="emp_shift" required>
                                     <option value="" disabled selected>เลือกกะ</option>
                                     <option value="กะเช้า">กะเช้า</option>
                                     <option value="กะดึก">กะดึก</option>
                                 </select>
-                            </div></b> </h6>
+                            </div>
                             <div class="input-field inline" style="margin-bottom: 0;width: 95%;">
                                 <input type="text" id="autocomplete-input" class="autocomplete" required name="emp_data" data-length="7" variant="outlined" onchange="sendItem(this.value, event)">
                                 <label for="autocomplete-input">รหัสพนักงาน</label>
