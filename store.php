@@ -33,11 +33,12 @@ if ($requestMethod == 'POST') {
             $emp_check_emp_id = $result['emp_check_emp_id'];
             $emp_check_2 = $result['emp_check_2'];
             $emp_check_3 = $result['emp_check_3'];
+            $emp_check_4 = $result['emp_check_4'];
             $emp_check_status = $result['emp_check_status'];
             $emp_check_time = $result['emp_check_time'];
 
             //คำสั่ง SQL สำหรับเพิ่มข้อมูลใน Database
-            $sql = "INSERT INTO emp_check_form (emp_check_id,emp_check_shift,emp_check_emp_id,emp_check_2,emp_check_3,emp_check_status,emp_check_time) VALUES (NULL,'$emp_check_shift','$emp_check_emp_id','$emp_check_2','$emp_check_3','$emp_check_status','$emp_check_time')";
+            $sql = "INSERT INTO emp_check_form (emp_check_id,emp_check_shift,emp_check_emp_id,emp_check_2,emp_check_3,emp_check_4,emp_check_status,emp_check_time) VALUES (NULL,'$emp_check_shift','$emp_check_emp_id','$emp_check_2','$emp_check_3','$emp_check_4','$emp_check_status','$emp_check_time')";
 
             $result = mysqli_query($conn, $sql);
 
