@@ -31,13 +31,13 @@
                             <h6> <b> 1. รอบ 1-2 วันที่ผ่านมาคุณไปรับการฉีดวัคซีนหรือไม่ </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group101" type="radio" value="1" checked />
+                                    <input name="group101" type="radio" value="1"  />
                                     <span>ใช่</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group101" type="radio" value="0" />
+                                    <input name="group101" type="radio" value="0" checked />
                                     <span>ไม่ใช่</span>
                                 </label>
                             </p>
