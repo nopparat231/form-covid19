@@ -52,9 +52,19 @@
                         </div>
                         <div class="input-field col s6">
                             <input id="location_out" name="location_out" type="text" class="validate" required>
-                            <label for="location_out">สถานที่หน่วยงาน</label>
+                            <label for="location_out">สถานที่หน่วยงานสถานที่หน่วยงาน (อำเภอ & จังหวัด)</label>
                         </div>
-
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">access_time</i>
+                            <input type="text" class="timepicker" placeholder="Placeholder" name="timepicker_time_in" id="timepicker_time_in" required>
+                            <label for="timepicker_time_in">เวลาเข้า</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">access_time</i>
+                            <input type="text" class="timepicker" placeholder="Placeholder" name="timepicker_time_out" id="timepicker_time_out" required>
+                            <label for="timepicker_time_out">เวลาออก</label>
+                        </div>
+                        
                         <div class="input-field col s6">
                             <input id="contact" name="contact" type="text" class="validate" required>
                             <label for="contact">ติดต่อหน่วยงาน/ผู้ใด</label>
@@ -121,6 +131,20 @@
                                 </label>
                             </p>
                         </div>
+                        <div class="row">
+                            <label>อัพโหลดเอกสารแนบ เอกสารการฉีดวัคซีนจากโรงพยาบาลหรือหมอพร้อม</label>
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>Browse</span>
+                                    <input type="file" name="sample_image1" id="sample_image1" />
+                                </div>
+
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" name="fileupload_name1" type="text" placeholder="Upload multiple files" />
+                                </div>
+                            </div>
+                            <input class="text-center" id="uploaded_image1" name="uploaded_image1" hidden>
+                        </div>
 
                         <div class="col s12">
                             <h6> <b class="flow-text"> 4. ผลตรวจ ATK / Rapid test ของท่าน พร้อม แนบรูปผลการตรวจ ATK ( ) ในรอบ 7 วันที่ผ่านมา </b> </h6>
@@ -139,7 +163,7 @@
                         </div>
 
                         <div class="row">
-                            <label>อัพโหลดเอกสารแนบ</label>
+                            <label>อัพโหลดเอกสารแนบATK</label>
                             <div class="file-field input-field">
                                 <div class="btn">
                                     <span>Browse</span>
@@ -234,7 +258,9 @@
 
         var datepicker_date = document.getElementById("datepicker_date").value;
         var timepicker_date = document.getElementById("timepicker_date").value;
-
+        //var timepicker_time_in = document.getElementById("timepicker_time_in").value;
+        //var timepicker_time_out = document.getElementById("timepicker_time_out").value;
+        
         document.getElementById("name_report").innerHTML = first_name + "  " + last_name;
 
         document.getElementById("date_report").innerHTML = "วันที่ " + datepicker_date + "  เวลา " + timepicker_date;
