@@ -32,9 +32,10 @@ $sql = "INSERT INTO vote (vote_emp_id) VALUES ('$emp[0]')";
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
-    echo "<script type='text/javascript'>alert('$emp[0]');</script>";
-
-    //echo json_encode(['status' => 'ok', 'message' => 'Insert Data Complete']);
+    echo ("<script LANGUAGE='JavaScript'>
+    window.alert('โหวดสำเร็จ!');
+    window.location.href='index.php';
+    </script>");
 } else {
-    //echo json_encode(['status' => 'error', 'message' => 'Error']);
+    echo json_encode(['status' => 'error', 'message' => 'Error']);
 }

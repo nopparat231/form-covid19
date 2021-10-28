@@ -26,38 +26,38 @@
                             <h5> <b> โหวดเลือกพนักงาน </b> </h5>
                             <p>
                                 <label>
-                                    <input name="groupvote" type="radio" value="1" />
-                                    <span>นาย ...</span>
+                                    <input name="groupvote" type="radio" value="1" required/>
+                                    <span>นาย 1...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input name="groupvote" type="radio" value="2" />
-                                    <span>นาย ...</span>
+                                    <span>นาย 2...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input name="groupvote" type="radio" value="3" />
-                                    <span>นาย ...</span>
+                                    <span>นาย 3...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input name="groupvote" type="radio" value="4" />
-                                    <span>นาย ...</span>
+                                    <span>นาย 4...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input name="groupvote" type="radio" value="5" />
-                                    <span>นาย ...</span>
+                                    <span>นาย 5...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input name="groupvote" type="radio" value="6" />
-                                    <span>นาย</span>
+                                    <span>นาย 6...</span>
                                 </label>
                             </p>
 
