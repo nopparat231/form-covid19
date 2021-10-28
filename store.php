@@ -65,13 +65,17 @@ if ($requestMethod == 'POST') {
             $outsider_check_group3 = $result['outsider_check_group3'];
             $outsider_check_vcc = $result['outsider_check_vcc'];
             $outsider_check_group4 = $result['outsider_check_group4'];
+
+            //file แรก
             $outsider_check_file = $result['outsider_check_file'];
+            //file ที่สอง
+            $outsider_check_file1 = $result['outsider_check_file1'];
+
             $outsider_check_status = $result['outsider_check_status'];
             $outsider_check_time = $result['outsider_check_time'];
             $outsider_check_timepicker_time_in = $result['outsider_check_timepicker_time_in'];
             $outsider_check_timepicker_time_out = $result['outsider_check_timepicker_time_out'];
-            //file ที่สอง
-            $outsider_check_Vaccine_File = $result['outsider_check_file1'];
+
 
             //คำสั่ง SQL สำหรับเพิ่มข้อมูลใน Database
             $sql = "INSERT INTO outsider_check_form 
@@ -81,7 +85,7 @@ if ($requestMethod == 'POST') {
             outsider_check_contact,outsider_check_location_in,outsider_check_contact_matter,
             outsider_check_group1,outsider_check_group2,outsider_check_group3,outsider_check_vcc,
             outsider_check_group4,outsider_check_file,outsider_check_status,outsider_check_time,
-            outsider_check_timepicker_time_in,outsider_check_timepicker_time_out,outsider_check_Vaccine_File) 
+            outsider_check_timepicker_time_in,outsider_check_timepicker_time_out,outsider_check_file1) 
             VALUES (NULL,'$outsider_check_datepicker_date','$outsider_check_timepicker_date',
             '$outsider_check_first_name','$outsider_check_last_name','$outsider_check_national_id',
             '$outsider_check_national_phone','$outsider_check_agency','$outsider_check_location_out',
@@ -89,7 +93,7 @@ if ($requestMethod == 'POST') {
             '$outsider_check_group1','$outsider_check_group2','$outsider_check_group3','$outsider_check_vcc',
             '$outsider_check_group4','$outsider_check_file','$outsider_check_status','$outsider_check_time',
             '$outsider_check_timepicker_time_in','$outsider_check_timepicker_time_out',
-            '$outsider_check_Vaccine_File')";
+            '$outsider_check_file1')";
 
 
 
@@ -118,13 +122,14 @@ if ($requestMethod == 'POST') {
 
         echo json_encode($new_name);
     }
+
     if (isset($_FILES['sample_image1'])) {
 
-        $extension = pathinfo($_FILES['sample_image1']['name1'], PATHINFO_EXTENSION);
+        $extension = pathinfo($_FILES['sample_image1']['name'], PATHINFO_EXTENSION);
 
         $new_name1 = time() . '.' . $extension;
 
-        move_uploaded_file($_FILES['sample_image1']['tmp_name1'], 'upload/' . $new_name1);
+        move_uploaded_file($_FILES['sample_image1']['tmp_name'], 'upload/' . $new_name1);
 
         $data = array(
             'image_name1' => $new_name1
