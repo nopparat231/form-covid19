@@ -3,6 +3,7 @@
 //ตั้งค่าการเชื่อมต่อฐานข้อมูล
 include('conn.php');
 
+if(isset($_POST['emp_data'])){
 
 $emp_data = $_POST['emp_data'];
 $emp = explode(",", $emp_data);
@@ -38,4 +39,6 @@ if ($result) {
     </script>");
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Error']);
+}
+
 }
