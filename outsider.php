@@ -136,14 +136,14 @@
                             <div class="file-field input-field">
                                 <div class="btn">
                                     <span>Browse</span>
-                                    <input type="file" name="sample_image1" id="sample_image1" />
+                                    <input type="file" name="sample_image" id="sample_image" />
                                 </div>
 
                                 <div class="file-path-wrapper">
-                                    <input class="file-path validate" name="fileupload_name1" type="text" placeholder="Upload multiple files" />
+                                    <input class="file-path validate" name="fileupload_name" type="text" placeholder="Upload multiple files" />
                                 </div>
                             </div>
-                            <input class="text-center" id="uploaded_image1" name="uploaded_image1" hidden>
+                            <input class="text-center" id="uploaded_image" name="uploaded_image" hidden>
                         </div>
 
                         <div class="col s12">
@@ -167,14 +167,14 @@
                             <div class="file-field input-field">
                                 <div class="btn">
                                     <span>Browse</span>
-                                    <input type="file" name="sample_image" id="sample_image" />
+                                    <input type="file" name="sample_image1" id="sample_image1" />
                                 </div>
 
                                 <div class="file-path-wrapper">
-                                    <input class="file-path validate" name="fileupload_name" type="text" placeholder="Upload multiple files" />
+                                    <input class="file-path validate" name="fileupload_name1" type="text" placeholder="Upload multiple files" />
                                 </div>
                             </div>
-                            <input class="text-center" id="uploaded_image" name="uploaded_image" hidden>
+                            <input class="text-center" id="uploaded_image1" name="uploaded_image1" hidden>
                         </div>
 
                         <div class="row">
