@@ -25,12 +25,15 @@
             <th>ติดต่อหน่วยงาน/ผู้ใด</th>
             <th>พื้นที่เข้ามาติดต่อ/ปฏิบัติงาน</th>
             <th>เรื่องที่มาติดต่อ</th>
+            <th>Time in</th>
+            <th>Time out</th>
             <th>มีอาการไข้ มีน้ำมูก ไอ เจ็บคอ</th>
             <th>อยู่ในระหว่างการกักตัว</th>
             <th>รับการฉีดวัคซีนแล้ว</th>
             <th>วันที่ฉีดวัคซีน</th>
             <th>ผลตรวจ ATK / Rapid test</th>
-            <th>อัพโหลดเอกสารแนบ</th>
+            <th>อัพโหลดเอกสารแนบ1</th>
+            <th>อัพโหลดเอกสารแนบ2</th>
             <th>ผลการตรวจ</th>
             <th>วันที่</th>
         </tr>
@@ -56,6 +59,8 @@
                     <td><?= $row["outsider_check_contact"] ?></td>
                     <td><?= $row["outsider_check_location_in"] ?></td>
                     <td><?= $row["outsider_check_contact_matter"] ?></td>
+                    <td><?= $row["outsider_check_timepicker_time_in"] ?></td>
+                    <td><?= $row["outsider_check_timepicker_time_out"] ?></td>
                     <td><?= $row["outsider_check_group1"] ?></td>
                     <td><?= $row["outsider_check_group2"] ?></td>
                     <td><?= $row["outsider_check_group3"] ?></td>
@@ -66,6 +71,16 @@
                         if ($row["outsider_check_file"] <> "") {
                         ?>
                             <a href="../upload/<?= $row["outsider_check_file"] ?>" download><?= $row["outsider_check_file"] ?></a>
+                        <?php
+                        } else {
+                            echo "<p>ไม่มีไฟล์</p>";
+                        }
+                        ?>
+                    </td><td>
+                        <?php
+                        if ($row["outsider_check_file"] <> "") {
+                        ?>
+                            <a href="../upload/<?= $row["outsider_check_file1"] ?>" download><?= $row["outsider_check_file1"] ?></a>
                         <?php
                         } else {
                             echo "<p>ไม่มีไฟล์</p>";
