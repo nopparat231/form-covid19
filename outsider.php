@@ -100,20 +100,20 @@
                             <h6> <b class="flow-text"> 2. ท่านเป็นบุคคลที่อยู่ในระหว่างการกักตัวเนื่องจากเป็นกลุ่มเสี่ยงเชื้อโควิด 19 หรือไม่ </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group2" type="radio" value="1" checked />
+                                    <input name="group2" type="radio" value="1"  />
                                     <span>ใช่</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group2" type="radio" value="0" />
+                                    <input name="group2" type="radio" value="0" checked/>
                                     <span>ไม่ใช่</span>
                                 </label>
                             </p>
                         </div>
 
                         <div class="col s12">
-                            <h6> <b class="flow-text"> 3. ท่านได้รับการฉีดวัคซีนแล้วหรือไม่ </b> </h6>
+                            <h6> <b class="flow-text"> 3. ท่านได้รับการฉีดวัคซีนแล้วหรือไม่ ถ้าใช่ กรุณากรอกวันที่ที่ได้รับวัคซีนล่าสุด </b> </h6>
                             <p>
                                 <label>
                                     <input name="group3" type="radio" value="0" id="group3id1" />
@@ -150,13 +150,13 @@
                             <h6> <b class="flow-text"> 4. ผลตรวจ ATK / Rapid test ของท่าน พร้อม แนบรูปผลการตรวจ ATK ( ) ในรอบ 7 วันที่ผ่านมา </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group4" type="radio" value="0" />
+                                    <input name="group4" type="radio" value="0" checked/>
                                     <span>Nagative(ผลลบ ไม่พบเชื้อ)</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="group4" type="radio" value="1" checked />
+                                    <input name="group4" type="radio" value="1"  />
                                     <span>Positive(ผลบวก พบเชื้อ)</span>
                                 </label>
                             </p>
