@@ -114,7 +114,7 @@ if ($requestMethod == 'POST') {
 
         $new_name = time() . '.' . $extension;
 
-        move_uploaded_file($_FILES['sample_image']['tmp_name'], 'upload/' . $new_name);
+        move_uploaded_file($_FILES['sample_image']['tmp_name'], './upload/' . $new_name);
 
         $data = array(
             'image_name' => $new_name
@@ -129,7 +129,7 @@ if ($requestMethod == 'POST') {
 
         $new_name1 = time() . '.' . $extension;
 
-        move_uploaded_file($_FILES['sample_image1']['tmp_name'], 'upload/' . $new_name1);
+        move_uploaded_file($_FILES['sample_image1']['tmp_name'], './upload/' . $new_name1);
 
         $data = array(
             'image_name1' => $new_name1
