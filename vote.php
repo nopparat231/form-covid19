@@ -26,37 +26,37 @@
                             <h5> <b> โหวดเลือกพนักงาน </b> </h5>
                             <p>
                                 <label>
-                                    <input name="groupvote" type="radio" value="1" required/>
+                                    <input name="groupvote[]" type="checkbox" value="1" required/>
                                     <span>นาย 1...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="groupvote" type="radio" value="2" />
+                                    <input name="groupvote[]" type="checkbox" value="2" />
                                     <span>นาย 2...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="groupvote" type="radio" value="3" />
+                                    <input name="groupvote[]" type="checkbox" value="3" />
                                     <span>นาย 3...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="groupvote" type="radio" value="4" />
+                                    <input name="groupvote[]" type="checkbox" value="4" />
                                     <span>นาย 4...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="groupvote" type="radio" value="5" />
+                                    <input name="groupvote[]" type="checkbox" value="5" />
                                     <span>นาย 5...</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input name="groupvote" type="radio" value="6" />
+                                    <input name="groupvote[]" type="checkbox" value="6" />
                                     <span>นาย 6...</span>
                                 </label>
                             </p>
