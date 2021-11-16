@@ -11,7 +11,7 @@ $emp = explode(",", $emp_data);
 $vote_number = $_POST['groupvote'];
 
 foreach ($vote_number as $vote_number=>$value) {
-
+    echo ("vote_number");
 $check = "SELECT * FROM `vote_log` WHERE vote_number = '$value' ";
 $result_check = $conn->query($check);
 $res = $result_check->fetch_array();
