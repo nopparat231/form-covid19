@@ -73,6 +73,7 @@ input[type=submit] {
 
         </div>
         <h5>กรุณาใช้ QR Code ใหม่ล่าสุด หรือ คลิก <a href="https://boydth.000webhostapp.com/?outsider">ประเมินรายวันก่อนเข้าพื้นที่</a> </h5>
+  <!--
         <div class="row">
             <div class="col s12">
 
@@ -316,7 +317,7 @@ input[type=submit] {
 
     </div>
 </div>
-
+-->
 <script>
     function myFunction() {
         var first_name = document.getElementById("first_name").value;
