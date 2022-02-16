@@ -1,10 +1,11 @@
 <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-        <h1 class="header center orange-text"><b>แบบประเมินรายวัน</b></h1>
+        <h1 class="header center orange-text"><b>แบบประเมินรายวัน/ Self Declaration </b></h1>
         <div class="row center">
             <h5 class="header col s12 light">
                 **โปรดตอบคำถามต่อไปนี้ ตามความเป็นจริง หากท่านปิดบังข้อมูล
                 มีความผิดตาม พรบ.โรคติดต่อ พ.ศ.2558
+                For Government 'Good Factory Practice'
             </h5>
         </div>
         <div class="row center">
