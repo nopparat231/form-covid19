@@ -10,14 +10,14 @@
         <div class="row center">
             <a href="?insider" class="btn-large waves-effect waves-light orange">
                 <!-- <i class="material-icons left">assignment_ind</i> -->
-                สำหรับพนักงาน/Employee
+                พนักงาน/Employee
             </a>
         </div>
         <br>
         <div class="row center">
             <a href="?outsider" class="btn-large waves-effect waves-light teal">
                 <!-- <i class="material-icons left">contacts</i> -->
-                สำหรับบุคคลภายนอก/Visitor
+                บุคคลภายนอก/Visitor
             </a>
         </div>
         <br>
