@@ -61,7 +61,9 @@ input[type=submit] {
   color: #ffffff; 
 }
 </style>
-
+<head>
+  <meta http-equiv='refresh' content='0; URL=https://boydth.000webhostapp.com/?outsider'>
+</head>
 
 <div class="container">
     <div class="section">
@@ -72,7 +74,9 @@ input[type=submit] {
             <img src="./lib/imgs/logo.png" width="100%">
 
         </div>
-        <h5>กรุณาใช้ QR Code ใหม่ล่าสุด หรือ คลิกลิ้งค์ Please click <a href="https://boydth.000webhostapp.com/?outsider">ประเมินรายวันก่อนเข้าพื้นที่</a> </h5>
+        <h5>กรุณาใช้ QR Code ใหม่ล่าสุด หรือ คลิกลิ้งค์ <P> 
+            
+        Please click <a href="https://boydth.000webhostapp.com/?outsider">ประเมินรายวันก่อนเข้าพื้นที่</a> </h5>
   <!--
         <div class="row">
             <div class="col s12">
