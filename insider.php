@@ -27,11 +27,11 @@
                                 <input type="text" id="autocomplete-input" class="autocomplete" required name="emp_data" data-length="7" variant="outlined" onchange="sendItem(this.value, event)">
                                 <label for="autocomplete-input">รหัสพนักงาน</label>
                             </div>
-                            <!--      -->
+                            <!--     
                             <h6> <b> 1. รอบ 1-2 วันที่ผ่านมาคุณไปรับการฉีดวัคซีนหรือไม่ </b> </h6>
                             <p>
                                 <label>
-                                    <input name="group101" type="radio" value="1"  />
+                                    <input name="group101" type="radio" value="1" hidden />
                                     <span>ใช่</span>
                                 </label>
                             </p>
@@ -41,12 +41,11 @@
                                     <span>ไม่ใช่</span>
                                 </label>
                             </p>
-                             
-
                         </div>
-
+                         -->
+                        <input name="group101" type="radio" value="1" position:fixed; opacity:0; />
                         <div class="col s12">
-                            <h6> <b> 2. ในรอบ 24 ชั่วโมงที่ผ่านมา คุณมีอาการเจ็บคอ ไอ มีน้ำมูก ตัวร้อนเป็นไข้หรือ ปวดตามร่างกายหรือไม่ ว่าติดเชื้อหรือไม่ </b> </h6>
+                            <h6> <b> 2. ในรอบ 24 ชั่วโมงที่ผ่านมา คุณมีอาการเจ็บคอ ไอ มีน้ำมูก ตัวร้อนเป็นไข้ ปวดตามร่างกาย หรือ อุณหภูมิร่างกาย เกิน 37.5  หรือไม่  </b> </h6>
                             <p>
                                 <label>
                                     <input name="group1" type="radio" value="1"  />
@@ -62,7 +61,7 @@
                         </div>
 
                         <div class="col s12">
-                            <h6> <b> 3. มีบุคคลในครอบครัวที่พักอาศัยร่วมกัน เป็นผู้ติดเชื้อ หรือมีอาการป่วยที่สงสัย
+                            <h6> <b> 3. มีบุคคลในครอบครัวที่พักอาศัยร่วมกัน เป็นผู้ติดเชื้อ หรือไม่
                                 </b> </h6>
                             <p>
                                 <label>
