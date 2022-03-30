@@ -34,13 +34,13 @@
                                     <input name="group101" type="radio" value="1" hidden />
                                     <span>ใช่</span>
                                 </label>
-                            </p> -->
+                            </p> 
                             <p>
                                 <label>
                                     <input name="group101" type="radio" value="0" checked />
                                     <span>ไม่ใช่</span>
                                 </label>
-                            </p>
+                            </p>-->
                             
                         </div>
                          
