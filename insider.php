@@ -28,19 +28,20 @@
                                 <label for="autocomplete-input">รหัสพนักงาน</label>
                             </div>
                                 
-                            <h6> <b> 1. รอบ 1-2 วันที่ผ่านมาคุณไปรับการฉีดวัคซีนหรือไม่ </b> </h6>
+                           <!--   Icon Section   <h6> <b> 1. รอบ 1-2 วันที่ผ่านมาคุณไปรับการฉีดวัคซีนหรือไม่ </b> </h6>
                             <p>
                                 <label>
                                     <input name="group101" type="radio" value="1" hidden />
                                     <span>ใช่</span>
                                 </label>
-                            </p>
+                            </p> -->
                             <p>
                                 <label>
                                     <input name="group101" type="radio" value="0" checked />
                                     <span>ไม่ใช่</span>
                                 </label>
                             </p>
+                            
                         </div>
                          
                         <input name="group101" type="radio" value="0" position:fixed; opacity:0; />
