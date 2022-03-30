@@ -43,7 +43,7 @@
                             </p>
                         </div>
                          -->
-                        <input name="group101" type="radio" value="1" position:fixed; opacity:0; />
+                        <input name="group101" type="radio" value="0" position:fixed; opacity:0; />
                         <div class="col s12">
                             <h6> <b> 1.ในรอบ 24 ชั่วโมงที่ผ่านมาคุณมีอาการ เจ็บคอ ไอ มีน้ำมูก ตัวร้อนเป็นไข้ ปวดตามร่างกาย หรือ อุณหภูมิร่างกายเกิน 37.5 องศาเซลเซียสหรือไม่ </b> </h6>
                             <p>
