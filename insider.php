@@ -104,8 +104,8 @@
                 <h5><b id="date_show1"></b></h5>
                 <h5><b id="name_show1"></b></h5>
 
-                <h5 class="nopass">1. ให้แจ้งหัวหน้างาน และหยุดลาป่วย 2 วัน</h5>
-                <h5 class="nopass">2. ทางบริษัทจะติดต่อประสานงานไปเป็นระยะ</h5>
+                <h5 class="nopass">1.ไม่ผ่านการประเมิน ไม่อนุญาตให้เข้าโรงงาน</h5>
+                <h5 class="nopass">2.ให้ติดต่อ ฝ่ายบุคคล โทร 033-045-830 ต่อ 3902 หรือ 089-6917-522</h5>
             </div>
             <div class="modal-footer">
                 <a href="index.php" class="modal-close waves-effect waves-green btn-flat"><b>ตกลง</b></a>
