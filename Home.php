@@ -22,6 +22,12 @@
             </a>
         </div>
         <br>
+        <div class="row center">
+            <a href="Privacy.php" class="">
+                <!-- <i class="material-icons left">contacts</i> -->
+                Privacy Notice
+            </a>
+        </div>
 
         <!-- เพิ่มโหวด
         <div class="row center">
